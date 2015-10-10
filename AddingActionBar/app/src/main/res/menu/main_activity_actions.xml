@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:yourapp="http://schemas.android.com/apk/res-auto"
+
+    >
+
+    <!-- Search should appear as Action Menu Button -->
+    <item
+        android:title="@string/action_search"
+        android:id="@+id/action_search"
+        android:icon="@drawable/search"
+
+        yourapp:showAsAction="always"
+
+
+        tools:ignore="AppCompatResource" />
+
+    <!-- Settings should always be on overflow -->
+    <item
+        android:title="@string/action_settings"
+        android:id="@+id/action_settings"
+        android:icon="@drawable/settings"
+
+        yourapp:showAsAction="never"
+
+        />
+</menu>
